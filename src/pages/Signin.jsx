@@ -13,7 +13,7 @@ export const Signin = () => {
     e.preventDefault()
     try {
       await signInWithEmailAndPassword(auth, email, password)
-      navigate('/dashboard')
+      navigate('/')
     } catch (err) {
       setError(true)
     }

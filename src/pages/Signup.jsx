@@ -20,7 +20,7 @@ export const Signup = () => {
         email: res.user.email,
         uid: res.user.uid,
       })
-      navigate('/dashboard')
+      navigate('/')
     } catch (err) {
       setError(err.message)
     }
